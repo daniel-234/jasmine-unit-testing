@@ -1,0 +1,22 @@
+Exercise 0 taken from the course "Intro to Unit Testing with Jasmine"
+that can be found on www.teaching-materials.org .
+All credit for the exercises and the game must go to the developers and
+the teachers of 'Girl Develop It SF' that made this material available.
+
+
+****************************************************************
+
+Instructions: describe what the 4 basic functions should do
+
+
+Describe "moveRight"
+	It "should change a player's x coordinate by +1"
+
+Describe "moveLeft"
+	It "should change a player's x coordinate by -1"
+
+Describe "moveUp"
+	It "should change a player's y coordinate by +1"
+
+Describe "moveDown"
+	It "should change a player's y coordinate by -1"
