@@ -10,13 +10,13 @@ Instructions: describe what the 4 basic functions should do
 
 
 Describe "moveRight"
-	It "should change a player's x coordinate by +1"
+	It "should change a player's x coordinate by adding 1"
 
 Describe "moveLeft"
-	It "should change a player's x coordinate by -1"
+	It "should change a player's x coordinate by subtracting 1"
 
 Describe "moveUp"
-	It "should change a player's y coordinate by +1"
+	It "should change a player's y coordinate by subtracting 1"
 
 Describe "moveDown"
-	It "should change a player's y coordinate by -1"
+	It "should change a player's y coordinate by adding 1"
