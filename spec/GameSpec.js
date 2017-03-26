@@ -27,7 +27,7 @@ describe('The game', function() {
 		it('should add 1 to player.y', function() {
 			var yCoordinate = player.y;
 			moveDown();
-			expect(player.y).toEqual(yCoordinate - 1);
+			expect(player.y).toEqual(yCoordinate + 1);
 		});
 	});
 
@@ -36,7 +36,7 @@ describe('The game', function() {
 		it('should subtract 1 from player.y', function() {
 			var yCoordinate = player.y;
 			moveUp();
-			expect(player.y).toEqual(yCoordinate + 1);
+			expect(player.y).toEqual(yCoordinate - 1);
 		});
 	});
 });
