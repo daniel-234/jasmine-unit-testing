@@ -3,18 +3,27 @@
 
 // Move the player to the right
 function moveRight() {
-	// Add 1 to its x coordinate
-	player.x += 1;
+	// Check if the player x coordinate is still inside the board
+	if(player.x < 15) {
+		// Add 1 to its x coordinate
+		player.x += 1;
+	}
 }
 
 function moveLeft() {
-	player.x -= 1;
+	if(player.x > 0) {
+		player.x -= 1;
+	}
 }
 
 function moveDown() {
-	player.y += 1;
+	if(player.y < 15) {
+		player.y += 1;
+	}
 }
 
 function moveUp() {
-	player.y -= 1;
+	if(player.y > 0) {
+		player.y -= 1;
+	}
 }

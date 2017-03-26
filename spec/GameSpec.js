@@ -39,4 +39,46 @@ describe('The game', function() {
 			expect(player.y).toEqual(yCoordinate - 1);
 		});
 	});
+
+	// write a test for the situation of the player going too far on the right
+	describe('If the player goes out of bounds on the right', function() {
+		it('should not move further on the right', function() {
+			// Place the player at the right end of the board
+			player.x = 15;
+			// Move it to the right
+			moveRight();
+			// Expect its x coordinate to not have changed
+			expect(player.x).toEqual(15);
+		});
+	});
+
+	// write a test for the situation of the player going too far on the left
+	describe('If the player goes out of bounds on the left', function() {
+		it('should not move further on the left', function() {
+			// Place the player at the left end of the board
+			player.x = 0;
+			moveLeft();
+			expect(player.x).toEqual(0);
+		});
+	});
+
+	// write a test for the situation of the player going too far downward
+	describe('If the player goes out of bounds towards the bottom', function() {
+		it('should not move further downward', function() {
+			// Place the player at the bottom end of the board
+			player.y = 15;
+			moveDown();
+			expect(player.y).toEqual(15);
+		});
+	});
+
+	// write a test for the situation of the player going too far upward
+	describe('If the player goes out of bounds towards the top', function() {
+		it('should not move further upward', function() {
+			// Place the player at the top end of the board
+			player.y = 0;
+			moveUp();
+			expect(player.y).toEqual(0);
+		});
+	});
 });
