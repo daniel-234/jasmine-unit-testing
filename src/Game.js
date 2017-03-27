@@ -28,10 +28,12 @@ function moveUp() {
 	}
 }
 
-// Check if the player has won, and return true in this case
+// Return true if the player has won; false otherwise
 function checkWin() {
 	if(player.x === goal.x && player.y === goal.y) {
 		renderWin();
 		return true;
+	} else {
+		return false;
 	}
 }

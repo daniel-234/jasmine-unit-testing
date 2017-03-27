@@ -98,5 +98,13 @@ describe('The game', function() {
 			goal.y = 5;
 			expect(checkWin()).toEqual(true);
 		});
+
+		it('should return false if the player\'s coordinates don\'t match the goal coordinates', function() {
+			player.x = 5;
+			player.y = 6;
+			goal.x = 5;
+			goal.y = 5;
+			expect(checkWin()).toEqual(false);
+		});
 	});
 });
