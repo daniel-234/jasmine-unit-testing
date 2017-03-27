@@ -27,3 +27,10 @@ function moveUp() {
 		player.y -= 1;
 	}
 }
+
+function checkWin() {
+	if(player.x === goal.x && player.y === goal.y) {
+		won = true;
+		renderWin();
+	}
+}

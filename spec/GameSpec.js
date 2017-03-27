@@ -81,4 +81,21 @@ describe('The game', function() {
 			expect(player.y).toEqual(0);
 		});
 	});
+
+	// write tests for the checkWin function
+	describe('The checkWin function', function() {
+		// player.x = 5;
+		// player.y = 5;
+		// goal.x = 5;
+		// goal.y = 5;
+
+		beforeEach(function() {
+			spyOn(window, 'checkWin');
+			checkWin();
+		});
+
+		it('checks that the player has won', function() {
+			expect(window.checkWin).toHaveBeenCalled();
+		});
+	});
 });
