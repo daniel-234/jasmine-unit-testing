@@ -8,8 +8,6 @@ var goal = {
 	y: 0
 }
 
-var won = false;
-
 function render(){
 	$('#player').css({
 		left: player.x * 30,
@@ -21,7 +19,6 @@ function render(){
 
 function renderWin(){
 	window.alert("Congratulations! You Win!");
-	won = false;
 }
 
 $(document).ready(function(){

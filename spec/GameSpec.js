@@ -84,18 +84,19 @@ describe('The game', function() {
 
 	// write tests for the checkWin function
 	describe('The checkWin function', function() {
-		// player.x = 5;
-		// player.y = 5;
-		// goal.x = 5;
-		// goal.y = 5;
-
-		beforeEach(function() {
+		it('checks that the player has won', function() {
 			spyOn(window, 'checkWin');
 			checkWin();
+			// Use the spy matcher 'toHaveBeenCalled' to check if the function was called
+			expect(window.checkWin).toHaveBeenCalled();
 		});
 
-		it('checks that the player has won', function() {
-			expect(window.checkWin).toHaveBeenCalled();
+		it('should return true if the player\'s coordinates match the goal coordinate', function() {
+			player.x = 5;
+			player.y = 5;
+			goal.x = 5;
+			goal.y = 5;
+			expect(checkWin()).toEqual(true);
 		});
 	});
 });
